@@ -24,4 +24,4 @@ jobs:
 
       - name: Upload backup to S3
         run: |
-          aws s3 cp repo-backup.zip s3://my-backups-demo/${{ github.repository }}-$(date +%F-%H-%M).zip
+          aws s3 cp repo-backup.zip s3://auto-back-up-bucket/${{ github.repository }}-$(date +%F-%H-%M).zip
